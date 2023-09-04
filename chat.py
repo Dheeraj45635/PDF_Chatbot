@@ -1,5 +1,5 @@
 import streamlit as st
-from dotenv import load_dotenv
+from config import OPENAI_API_KEY
 import pickle
 from PyPDF2 import PdfReader
 from streamlit_extras.add_vertical_space import add_vertical_space
@@ -26,7 +26,6 @@ with st.sidebar:
     add_vertical_space(5)
     st.write('Made by [Priyank Srivastava,Dheeraj,Nivedita)]')
  
-load_dotenv()
 
 
 def preprocess_text(text):
